@@ -1,4 +1,5 @@
-import { CoffeeDTO } from '@/@types';
+//d.ts 불러오기
+import { CoffeeDTO } from 'Coffee';
 
 export class OrderModel {
   private coffees: CoffeeDTO[] = [];
@@ -6,7 +7,7 @@ export class OrderModel {
   setOrderCoffees(coffees: CoffeeDTO[]) {
     this.coffees = coffees;
   }
-  getOrderCoffees(){
+  getOrderCoffees() {
     return this.coffees;
   }
 }

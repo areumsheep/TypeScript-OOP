@@ -12,6 +12,7 @@
       "ESNext",
       "DOM"
     ],
+    // skipLibCheck 설정
     "skipLibCheck": true,
     "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
@@ -26,6 +27,7 @@
         "src/*"
       ],
     },
+    // d.ts 적용
     "typeRoots": [
       "@types/"
     ]

@@ -1,8 +1,10 @@
+//d.ts 불러오기
+import { CoffeeDTO } from 'Coffee';
+
 import { $, $all } from '../utils/dom';
-import { CoffeeDTO } from '../@types';
 
 export class OrderView {
-  private orderTable = $("#order-table") as HTMLDivElement;
+  private orderTable = $('#order-table') as HTMLDivElement;
   createOrderRow(coffee: CoffeeDTO) {
     const content = `
       <div class="table-row" data-key=${coffee.id}>
@@ -24,7 +26,7 @@ export class OrderView {
         </div>
       </div>
     `;
-    this.orderTable.insertAdjacentHTML("beforeend", content);
+    this.orderTable.insertAdjacentHTML('beforeend', content);
   }
   deleteOrderRow(id: number) {
     const deletedItem = $(`[data-key="${id}"]`) as HTMLDivElement;

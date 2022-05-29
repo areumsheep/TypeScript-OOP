@@ -1,9 +1,10 @@
-import { CoffeeDTO } from "@/@types";
-import { OrderModel } from "../models/order.model";
+//d.ts 불러오기
+import { CoffeeDTO } from 'Coffee';
+import { OrderModel } from '../models/order.model';
 
 export class OrderService {
   private orderModel = new OrderModel();
-  
+
   addCoffee(coffee: CoffeeDTO) {
     const orderedList = this.orderModel.getOrderCoffees();
     orderedList.push(coffee);
@@ -11,7 +12,7 @@ export class OrderService {
   }
   deleteCoffee(id: number) {
     let orderedList = this.orderModel.getOrderCoffees();
-    orderedList = orderedList.filter((coffee) => coffee.id !== id);
+    orderedList = orderedList.filter(coffee => coffee.id !== id);
     this.orderModel.setOrderCoffees(orderedList);
   }
 }
