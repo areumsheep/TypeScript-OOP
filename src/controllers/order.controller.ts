@@ -1,10 +1,10 @@
 //d.ts 불러오기
 import { CoffeeDTO } from 'Coffee';
 
-import { $, $all } from '../utils/dom';
-import { OrderService } from '../services/order.service';
-import { OrderView } from '../views/order.view';
-import { createRandomOrder } from '../utils/random';
+import { $, $all } from '@/utils/dom';
+import { OrderService } from '@/services/order.service';
+import { OrderView } from '@/views/order.view';
+import { createRandomOrder } from '@/utils/random';
 
 export class OrderController {
   private coffeeIndex = 0;

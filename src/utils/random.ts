@@ -1,4 +1,4 @@
-import { COFFEE, SIZE, SHOT, ICE_HOT, CUP, SYRUP, ICE, WHIPPED_CREAM, EXTRA } from '../constant/coffee';
+import { COFFEE, SIZE, SHOT, ICE_HOT, CUP, SYRUP, ICE, WHIPPED_CREAM, EXTRA } from '@/constant/coffee';
 
 function random(coffeeMenuArr: string[]) {
   return Math.floor(Math.random() * coffeeMenuArr.length);

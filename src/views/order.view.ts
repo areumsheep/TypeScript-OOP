@@ -1,7 +1,7 @@
 //d.ts 불러오기
 import { CoffeeDTO } from 'Coffee';
 
-import { $, $all } from '../utils/dom';
+import { $, $all } from '@/utils/dom';
 
 export class OrderView {
   private orderTable = $('#order-table') as HTMLDivElement;

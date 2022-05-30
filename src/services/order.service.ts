@@ -1,6 +1,6 @@
 //d.ts 불러오기
 import { CoffeeDTO } from 'Coffee';
-import { OrderModel } from '../models/order.model';
+import { OrderModel } from '@/models/order.model';
 
 export class OrderService {
   private orderModel = new OrderModel();
