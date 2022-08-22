@@ -5,6 +5,11 @@
 enum을 쓰면 사용하지 않는 코드를 삭제하는 `Tree-shaking`기능을 사용할 수 없다.  
 → 자바스크립트에는 enum이 없어서 타입스크립트 코드에서 자바스크립트 코드로 변환할 때 즉시실행함수를 포함한 코드로 생성이 되는데 번들러는 IIFE를 사용하지 않는 코드로 판단할 수 없기 때문이다.
 
+> **추가**   
+> 아래 이미지처럼 enum을 선언하고 방 번호로 사용한다면 없는 방 번호로 접근을 해도 에러가 나지 않고 `undefined`가 발생하게 된다!      
+> <img width="394" alt="image" src="https://user-images.githubusercontent.com/48716298/185848376-7a5328ae-2c4a-4af3-8bb8-ae4579c667fe.png">    
+> [자세한 이야기는 여기를 확인하세요](https://velog.io/@reum107/%EB%8F%84%EC%84%9C-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%83%80%EC%9E%85%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83)
+
 ## keyof typeof란?
 
 > https://lovemewithoutall.github.io/it/typescript-keyof-typeof/
